@@ -1,1 +1,4 @@
-We Are rohanshah$ xcodebuild clean build test -workspace We\ Are.xcodeproj/project.xcworkspace/ -scheme We\ Are -sdk iphonesimulator -destination "platform=iOS Simulator,OS=12.1,name=iPhone XR"
+os: osx
+osx_image: xcode10.1
+language: swift
+script: xcodebuild clean build test -workspace We\ Are.xcodeproj/project.xcworkspace/ -scheme We\ Are -sdk iphonesimulator -destination "platform=iOS Simulator,OS=12.1,name=iPhone XR"
